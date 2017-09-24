@@ -1,0 +1,432 @@
+/* 
+Modified Timeline CSS v1.2
+ */
+
+.link .rank, .domain, .commentarea .menuarea, #noresults {display:none;}
+body, .side, .sidebox .spacer, .titlebox form.toggle, .leavemoderator, .icon-menu a  {background-color:whiteSmoke;}
+body {background: linear-gradient(to right, whiteSmoke 100px, gainsboro 100px, gainsboro 106px, whiteSmoke 106px) whiteSmoke;}
+body.comments-page .link {margin-bottom: 50px;}
+
+.side #search {
+    position: relative;
+}
+.side #search:before,
+.side #search:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #03A9F4, #fff 30%);
+    height: 2px;
+    -webkit-animation: srch 5s linear infinite;
+    animation: srch 5s linear infinite;
+}
+.side #search:before {
+    top: 0;
+}
+.side #search:after {
+    background: linear-gradient(to right, #fff 70%, #03A9F4 100%);
+    bottom: 0;
+    -webkit-animation: srch2 5s 2.5s linear infinite;
+    animation: srch2 5s 2.5s linear infinite;
+}
+
+#sr-header-area a {
+    color : #010502;
+}
+
+#header {
+    border-bottom-color : #A793CF;
+    background: repeating-radial-gradient(
+  circle,
+  purple,
+  purple 10px,
+  #4b026f 10px, 
+  #4b026f 20px
+);
+    background-color : #F8E9F4;
+}
+
+.pagename a{
+    color: white;
+}
+
+#sr-header-area {
+    border-bottom-color : #A793CF;
+    background-color : #9AF097;
+}
+
+#header-bottom-right {
+    background-color : #BDFFF8;
+}
+/* Change 'readers' box value */
+div.titlebox span.word {
+    display:none;
+}
+div.titlebox span.number:after {
+    content: " game changers";
+}
+/* Change 'users here now' box value */
+.users-online .word {
+    display:none;
+}
+.users-online .word, .users-online .number:after {
+    content: " members changing the World" !important;
+}
+/* Upvote arrow */
+.arrow.up {
+    width: 0px;
+    background-image:none;
+    height: 0;
+    border-bottom: 8px solid #bdbdbd;
+    border-left: 8px solid #fff;
+    border-left-color:transparent;
+    border-right: 8px solid #fff;
+    border-right-color:transparent;
+    margin-bottom:6px;
+}
+.arrow.up:after {
+    content:"";
+    position:relative;
+    top:7px;
+    left:-3px;
+    width:5px;
+    height:14px;
+    background: #bdbdbd;
+    background-image: -webkit-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background-image: -moz-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background-image: -ms-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background-image: -o-linear-gradient(top, #bdbdbd, #dcdcdc);
+    background: linear-gradient(to bottom, #bdbdbd, #dcdcdc);
+    display:block;
+}
+.arrow.upmod {
+    width: 0px;
+    background-image:none;
+    height: 0;
+    border-bottom: 8px solid #0FBA15;
+    border-left: 8px solid #fff;
+    border-left-color:transparent;
+    border-right: 8px solid #fff;
+    border-right-color:transparent;
+    margin-bottom:6px;
+}
+.arrow.upmod:after {
+    content:"";
+    position:relative;
+    top:7px;
+    left:-3px;
+    width:5px;
+    height:6px;
+    background: #0FBA15;
+    background-image: -webkit-linear-gradient(top, #0FBA15, #5CFF62);
+    background-image: -moz-linear-gradient(top, #0FBA15, #5CFF62);
+    background-image: -o-linear-gradient(top, #0FBA15, #5CFF62);
+    background-image: -ms-linear-gradient(top, #0FBA15, #5CFF62);
+    background-image: linear-gradient(to bottom, #0FBA15, #5CFF62);
+    display:block;
+}
+/* Downvote arrow */
+.arrow.down {
+    width: 0px;
+    height: 0;
+    margin-top:8px;
+    background-image: none;
+    border-top: 8px solid #BDBDBD;
+    border-left: 8px solid #FFF;
+    border-left-color: transparent;
+    border-right: 8px solid #FFF;
+    border-right-color: transparent;
+}
+.arrow.down:after {
+    content: "";
+    position: relative;
+    bottom: 13px;
+    left: -3px;
+    width: 5px;
+    height: 6px;
+    background: #BDBDBD;
+    background-image: -webkit-linear-gradient(top, #DCDCDC, #BDBDBD);
+    background-image: -moz-linear-gradient(top, #DCDCDC, #BDBDBD);
+    background-image: -o-linear-gradient(top, #DCDCDC, #BDBDBD);
+    background-image: -ms-linear-gradient(top, #DCDCDC, #BDBDBD);
+    background-image: linear-gradient(to bottom, #DCDCDC, #BDBDBD);
+    display: block;}
+.arrow.downmod {
+    width: 0px;
+    height: 0;
+    margin-top: 8px;
+    background-image: none;
+    border-top: 8px solid #FF6166;
+    border-left: 8px solid #FFF;
+    border-left-color: transparent;
+    border-right: 8px solid #FFF;
+    border-right-color: transparent;
+}
+.arrow.downmod:after {
+    content: "";
+    position: relative;
+    bottom: 13px;
+    left: -3px;
+    width: 5px;
+    height: 6px;
+    background: #9494FF;
+    background-image: -webkit-linear-gradient(top, #FFAEB3, #FF6166);
+    background-image: -moz-linear-gradient(top, #FFAEB3, #FF6166);
+    background-image: -o-linear-gradient(top, #FFAEB3, #FF6166);
+    background-image: -ms-linear-gradient(top, #FFAEB3, #FF6166);
+    background-image: linear-gradient(to bottom, #FFAEB3, #FF6166);
+    display: block;
+}
+/* Rounded tabs */
+#header .tabmenu li a{
+    border: 1px solid #A793CF !important;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position:relative;
+    display:inline-block;
+    background: #F2F2F2 !important;
+}
+#header .tabmenu li.selected a{
+    background:#FFFFFF !important;
+    border-bottom-color: #FFFFFF !important;}
+#header .tabmenu li{
+    margin: 0px -1px;
+    padding-bottom:2px
+}
+#header .tabmenu{
+    padding:3px;
+    padding-bottom:0px;
+    overflow: hidden;
+    position: relative;
+    bottom:-1px;
+}
+#header .tabmenu:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 1px solid #A793CF;
+}
+#header .tabmenu li a:before,
+#header .tabmenu li a:after {
+    position: absolute;
+    bottom: -1px;
+    width: 6px;
+    height: 6px;
+    content: " ";
+    border: 1px solid #A793CF;
+}
+#header .tabmenu li a:before {
+    left: -7px;
+    border-bottom-right-radius: 6px;
+    border-width: 0 1px 1px 0 !important;
+    box-shadow: 2px 2px 0 #F2F2F2;
+}
+#header .tabmenu li a:after {
+    right: -7px;
+    border-bottom-left-radius: 6px;
+    border-width: 0 0 1px 1px !important;
+    box-shadow: -2px 2px 0 #F2F2F2;
+}
+#header .tabmenu li.selected a:before{
+    box-shadow: 2px 2px 0 #FFFFFF;
+}
+#header .tabmenu li.selected a:after{
+    box-shadow: -2px 2px 0 #FFFFFF;
+}
+
+.link .midcol {
+display: block;
+position: absolute;
+margin-left: -120px;
+margin-top: -17px;
+}
+
+.link {
+padding: 10px;
+margin-left: 150px;
+margin-top: 40px;
+border: 1px solid grey;
+background: none repeat scroll 0% 0% #FFF;
+width:50%;
+position:relative;
+}
+
+.link, .usertext-edit, .comment {
+position: relative;
+}
+
+.link:before, .usertext-edit:before, .comment:before {
+width: 16px;
+height: 16px;
+background-color: white;
+content: " ";
+display: inline-block;
+border: 4px solid grey;
+position: absolute;
+top: 10px;
+left: -65px;
+border-radius: 50%;
+}
+
+.link:after, .usertext-edit:after, .comment:after {
+width: 10px;
+height: 10px;
+background-color: white;
+position: absolute;
+content: " ";
+display: inline-block;
+top: 17px;
+left: -6px;
+border-left: 1px solid grey;
+border-bottom: 1px solid grey;
+transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+
+.link:hover:after, .usertext-edit:hover:after, .comment:hover:after {
+border-left: 1px solid black;
+border-bottom: 1px solid black;
+}
+
+.child .usertext-edit:before, .child .comment:before, .expando .usertext-edit:before, .spacer .roundfield-content .usertext-edit:before {
+display:none;
+}
+
+.child .comment, .expando .usertext-edit, .spacer .roundfield-content .usertext-edit {
+margin-left:0px;
+margin-top:0px;
+width:95%;
+border:none;
+}
+
+.child .comment:hover, .expando .usertext-edit:hover, .spacer .roundfield-content .usertext-edit:hover {
+border:none;
+}
+
+.link:hover:before, .usertext-edit:hover:before, .comment:hover:before {
+background-position:0px 0px;
+}
+
+.link .usertext .md {
+background-color: white;
+border: none;
+border-radius: none;
+}
+
+.link.last-clicked {
+border: 1px solid grey;
+overflow: visible;
+}
+
+.link:hover, .link.last-clicked:hover, .usertext-edit:hover, .comment:hover {
+border: 1px solid black;
+}
+
+.usertext-edit, .comment {
+background: none repeat scroll 0% 0% #FFF;
+border: 1px solid grey;
+padding: 0px;
+margin-top: 30px;
+margin-left: 140px;
+width: 50%;
+}
+
+.usertext-edit {
+padding:12px;
+}
+
+.child .usertext-edit {
+width:100%;
+}
+
+.comment {
+padding: 10px 10px 0 10px;
+margin-left: 149px;
+}
+
+.commentarea > .usertext {
+overflow: visible;
+}
+
+.usertext-edit textarea {
+width: 100%;
+height: 102px;
+border: none;
+box-sizing: border-box;
+}
+
+.child .usertext-edit {
+border:none;
+margin:10px 0 10px 0;
+width:95%;
+height:145px;
+}
+
+.child .usertext-edit:hover {
+border:none;
+}
+
+.child .usertext-edit textarea {
+width:100%;
+}
+
+.usertext button {
+margin: 0px 0px 0 10px;
+}
+
+.usertext .help-toggle, .usertext a.reddiquette {
+margin-top: 6px;
+margin-right: 10px;
+}
+
+.usertext .bottom-area {
+overflow: hidden;
+width: 100%;
+margin-top: 10px;
+border-top: 1px dashed rgba(0, 0, 0, 0.3);
+padding-top: 10px;
+}
+
+.panestack-title {
+margin: 10px 310px 0px 10px;
+border-bottom: none;
+background: #333;
+color: white;
+padding: 10px;
+border-radius: 7px;
+display: inline-block;
+}
+
+.linkflairlabel {
+font-size:inherit;
+}
+
+.linkflair-year .linkflairlabel {
+position: absolute;
+margin: -70px 310px 0px -97px;
+border-bottom: none;
+background: none repeat scroll 0% 0% #333;
+color: #FFF;
+padding: 10px;
+border-radius: 7px;
+margin-top: -70px;
+font-size:inherit;
+}
+
+body.listing-page .linkflair-year:not(.linkflair-yearnolist) {
+margin-top:100px;
+}
+
+body.comments-page .linkflair-year {
+background-color: red;
+margin-top:100px;
+}
+
+body.listing-page .linkflair-yearnolist .linkflairlabel {
+display:none;
+}
